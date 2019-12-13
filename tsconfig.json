@@ -1,0 +1,60 @@
+{
+  // "extends": "",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowJs": false,
+    "checkJs": false,
+    
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": false,
+    "baseUrl": "./src",
+    "jsx": "preserve",
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "lib",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "pretty": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": false,
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "~/*": [
+        "./components/*"
+      ],
+      "m/*": [
+        "./modules/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom"
+    ]
+  },
+  "references": [],
+  "include": [
+    "./src",
+    "./test"
+  ],
+  "exclude": [
+    "./node_modules"
+  ],
+  "typeAcquisition": {
+    "enable": true,
+    // "include": [],
+    "exclude": [
+      "react",        // 防止由开发依赖引入的 React.js 的 JSX 声明污染项目
+      "react-dom"
+    ]
+  }
+}

@@ -7,9 +7,6 @@ Vue.use(Vuex);
 const state ={
     
 };
-const mutations ={
-
-};
 
 export default new Vuex.Store({
   modules:{

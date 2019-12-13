@@ -13,7 +13,8 @@ const mapComponent = resolve => require(["@/views/map/mapView.vue"], resolve)
 const echartsproComponent = resolve => require(["@/views/map/echartsView.vue"], resolve)
 
 // Vue相关
-const vueComponent = resolve => require(["@/views/VueAbout/VueAbout.vue"], resolve)
+// const vueComponent = resolve => require(["@/views/VueAbout/VueAbout.vue"], resolve)
+const vueComponent = () => import("@/views/VueAbout/VueAbout")
 const parentComponent = resolve => require(["@/views/VueAbout/parent.vue"], resolve)
 const confirmComponent = resolve => require(["@/views/VueAbout/Example/confirm.vue"], resolve)
 const uploadComponent = resolve => require(["@/views/VueAbout/Example/upload.vue"], resolve)
